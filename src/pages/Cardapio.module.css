@@ -1,0 +1,112 @@
+.cardapio {
+    background-color: #f0e4d3;
+    padding: 60px 7%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cardapio > img {
+    grid-column: 1 / -1;
+    width: 180px;
+    height: auto;
+    display: block;
+    justify-self: center;
+    object-fit: contain;
+    margin: -35px auto 10px;
+}
+
+.horariosEnderecoTitle {
+    grid-column: 1 / -1;
+
+    color: #70452f;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.cardapioItem {
+    background-color: #fffaf3;
+    border: 1px solid #e5d4bf;
+    border-radius: 18px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(112, 69, 47, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.cardapioItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.cardapioItemTitle {
+    color: #70452f;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+.cardapioItemParagraph {
+    color: #786353;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+.cardapioItemPrice {
+    color: #70452f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.cardapioItemButton {
+    background-color: #70452f;
+    color: #e7d3b7;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    box-shadow: inset 0 -4px 0 #382419, 0 5px 10px rgba(56, 36, 25, 0.15);
+    margin-top: 15px;
+}
+
+.cardapioItemButton:hover {
+    background-color: #382419;
+}
+
+@media (max-width: 768px) {
+    .cardapio {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+
+    .cardapioItem {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cardapioItem img {
+        height: 220px;
+    }
+
+    .horariosEnderecoTitle {
+        font-size: 2rem;
+    }
+}

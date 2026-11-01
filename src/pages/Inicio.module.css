@@ -1,0 +1,70 @@
+.Inicio {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+
+    background-image: url('../assets/cafeteria.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.InicioTexto {
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.InicioTexto h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.InicioTexto p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.inicioButton {
+    background-color: #e7d3b7;
+    color: #382419;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #caae8a, 0 5px 10px rgba(56, 36, 25, 0.15);
+}
+
+.inicioButton:hover {
+    background-color: #f5e8d5;
+}
+
+@media (max-width: 768px) {
+    .Inicio {
+        min-height: 100vh;
+        padding: 40px 6%;
+    }
+
+    .InicioTexto h1 {
+        font-size: 36px;
+    }
+
+    .InicioTexto p {
+        font-size: 17px;
+    }
+
+    .InicioTexto button {
+        font-size: 16px;
+        padding: 14px 25px;
+    }
+}
